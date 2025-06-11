@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter_HTML", "Adapter_HTML\Adapter_HTML.csproj", "{28E8524C-3EA5-4C98-8639-9426CE3E57E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter_KOERI", "Adapter_KOERI\Adapter_KOERI.csproj", "{7BD4F4B7-65AD-4BCA-AA57-66E20933AB04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28E8524C-3EA5-4C98-8639-9426CE3E57E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E8524C-3EA5-4C98-8639-9426CE3E57E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E8524C-3EA5-4C98-8639-9426CE3E57E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E8524C-3EA5-4C98-8639-9426CE3E57E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD4F4B7-65AD-4BCA-AA57-66E20933AB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD4F4B7-65AD-4BCA-AA57-66E20933AB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD4F4B7-65AD-4BCA-AA57-66E20933AB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD4F4B7-65AD-4BCA-AA57-66E20933AB04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
