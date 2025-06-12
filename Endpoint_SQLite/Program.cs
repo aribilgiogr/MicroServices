@@ -1,4 +1,5 @@
-using Adapter_TCMB;
+using Endpoint_SQLite.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpClient();
-
-builder.Services.AddSingleton<CurrencyService>();
+builder.Services.AddDbContext<LibraryContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("default")));
 
 var app = builder.Build();
 
@@ -22,12 +21,5 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", async (CurrencyService currencyService) =>
-{
-    var currencies = await currencyService.GetCurrenciesAsync();
-    return Results.Json(currencies);
-});
-
-app.MapGet("/convert/{from}/{to}/{amount}", (string from, string to, decimal amount) => new { from, to, amount });
 
 app.Run();

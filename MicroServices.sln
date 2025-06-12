@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter_KOERI", "Adapter_KO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter_TCMB", "Adapter_TCMB\Adapter_TCMB.csproj", "{CDB38C27-1F06-47B9-99B5-847698142385}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endpoint_API", "Endpoint_API\Endpoint_API.csproj", "{12FD82FD-4B3E-4BD9-AB3A-DAD32908A82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endpoint_SQLite", "Endpoint_SQLite\Endpoint_SQLite.csproj", "{4CE4A8FE-78DD-4C4E-8B63-C768AEBDEC89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CDB38C27-1F06-47B9-99B5-847698142385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB38C27-1F06-47B9-99B5-847698142385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB38C27-1F06-47B9-99B5-847698142385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FD82FD-4B3E-4BD9-AB3A-DAD32908A82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FD82FD-4B3E-4BD9-AB3A-DAD32908A82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FD82FD-4B3E-4BD9-AB3A-DAD32908A82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FD82FD-4B3E-4BD9-AB3A-DAD32908A82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE4A8FE-78DD-4C4E-8B63-C768AEBDEC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE4A8FE-78DD-4C4E-8B63-C768AEBDEC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE4A8FE-78DD-4C4E-8B63-C768AEBDEC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE4A8FE-78DD-4C4E-8B63-C768AEBDEC89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
