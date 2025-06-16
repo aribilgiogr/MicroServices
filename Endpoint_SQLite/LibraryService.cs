@@ -103,7 +103,7 @@ namespace Endpoint_SQLite
             return await db.Authors.Include(a => a.Books).FirstOrDefaultAsync(a => a.Id == authorId);
         }
 
-        public async Task<IEnumerable<Author>> GetAuthors()
+        public async Task<IEnumerable<Author>> GetAuthorsAsync()
         {
             return await db.Authors.Include("Books").ToListAsync();
         }
@@ -113,7 +113,7 @@ namespace Endpoint_SQLite
             return await db.Books.Include(b => b.Author).Include(b => b.Publisher).FirstOrDefaultAsync(b => b.Id == bookId);
         }
 
-        public async Task<IEnumerable<Book>> GetBooks(int? authorId = null, int? publisherId = null)
+        public async Task<IEnumerable<Book>> GetBooksAsync(int? authorId = null, int? publisherId = null)
         {
             return await db.Books.Include(b => b.Author).Include(b => b.Publisher)
                 .Where(b => (authorId == null || b.AuthorId == authorId) && (publisherId == null || b.PublisherId == publisherId)).ToListAsync();
@@ -124,7 +124,7 @@ namespace Endpoint_SQLite
             return await db.Publishers.Include(p => p.Books).FirstOrDefaultAsync(p => p.Id == publisherId);
         }
 
-        public async Task<IEnumerable<Publisher>> GetPublishers()
+        public async Task<IEnumerable<Publisher>> GetPublishersAsync()
         {
             return await db.Publishers.Include("Books").ToListAsync();
         }

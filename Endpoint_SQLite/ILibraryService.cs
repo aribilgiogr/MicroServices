@@ -5,13 +5,13 @@ namespace Endpoint_SQLite
     public interface ILibraryService
     {
         // Define CRUD operations here
-        Task<Book> GetBookAsync(int bookId);
-        Task<Author> GetAuthorAsync(int authorId);
-        Task<Publisher> GetPublisherAsync(int publisherId);
+        Task<Book?> GetBookAsync(int bookId);
+        Task<Author?> GetAuthorAsync(int authorId);
+        Task<Publisher?> GetPublisherAsync(int publisherId);
 
-        Task<IEnumerable<Book>> GetBooks(int? authorId = null, int? publisherId = null);
-        Task<IEnumerable<Author>> GetAuthors();
-        Task<IEnumerable<Publisher>> GetPublishers();
+        Task<IEnumerable<Book>> GetBooksAsync(int? authorId = null, int? publisherId = null);
+        Task<IEnumerable<Author>> GetAuthorsAsync();
+        Task<IEnumerable<Publisher>> GetPublishersAsync();
 
         Task<Book> AddBookAsync(Book book);
         Task<Author> AddAuthorAsync(Author author);
